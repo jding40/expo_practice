@@ -1,0 +1,83 @@
+# ===============================
+# Global ignores for repo root
+# ===============================
+
+# Node modules (root or sub-projects)
+node_modules/
+
+# Yarn / NPM logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Expo / React Native
+.expo/
+.expo-shared/
+
+# Metro bundler
+.metro-cache/
+.expo/web/cache/
+
+# Temporary files
+tmp/
+temp/
+*.tmp
+*.temp
+
+# Logs
+*.log
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# OS-dependent files
+.DS_Store
+Thumbs.db
+
+# Editor folders
+.vscode/
+.idea/
+
+# Build outputs (web builds or native builds)
+dist/
+build/
+web-build/
+android/
+ios/
+
+# Expo specific caches
+.expo/
+.expo-shared/
+.expo/web/
+.expo/packages/
+
+# ==================================
+# Ignores inside every Expo project
+# ==================================
+# If your repository contains multiple Expo subprojects,
+# this makes sure each subproject is clean.
+
+**/node_modules/
+**/.expo/
+**/.expo-shared/
+**/.expo/web/
+**/.expo/web/cache/
+**/metro-cache/
+**/web-build/
+**/dist/
+**/build/
+**/android/
+**/ios/
+
+# Expo generated
+**/package-lock.json
+**/yarn.lock
+**/pnpm-lock.yaml
+
+# If you want to keep lock files, remove above 3 lines.
+
+# Assets generated or downloaded
+**/assets/*.orig
