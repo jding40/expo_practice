@@ -19,7 +19,14 @@ function GoalInput(props) {
   }
 
   return (
-    <Modal visible={props.modalIsVisible} animationType="slide">
+    <Modal
+      visible={props.modalIsVisible}
+      animationType="slide"
+      onRequestClose={() => {
+        Alert.alert("Modal has been closed.");
+        props.setModalIsVisible(false);
+      }}
+    >
       <View style={styles.inputContainer}>
         <TextInput
           style={styles.textInput}
